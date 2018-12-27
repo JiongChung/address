@@ -1,0 +1,60 @@
+
+.picker-view {
+    width: 100%;
+    display: flex;
+    z-index:12;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0rpx;
+    left: 0rpx;
+    height: 500rpx;
+  }
+   
+  .picker-item {
+    line-height: 70rpx;
+    margin-left: 5rpx;
+    margin-right: 5rpx;
+    text-align: center;
+  }
+
+  .tools{
+      height: 80rpx;
+      width: 100%;
+      line-height: 80rpx;
+      margin: auto;
+  }
+  .tools .btn{
+      float: left;
+      padding: 0 30rpx;
+      color: #999999
+  }
+  .tools .btn:last-child{
+    float: right;
+    color: orange
+}
+
+.addresslist{
+    height: 420rpx;
+    width: 100%;
+}
+
+  .animation-element-wrapper{
+    display: flex;  
+    position: fixed;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+  }
+  .animation{
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }

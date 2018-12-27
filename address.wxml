@@ -1,0 +1,30 @@
+<view class="container">
+    <text bindtap="open">选择地址：{{areaInfo}} -- {{districtId}}</text>
+</view>
+
+<view class="animation-element-wrapper" wx:if="{{addressMenuIsShow}}">
+    <view class="animation" bindtap="hideCitySelected"></view>
+    <view class="picker-view">
+        <view class="tools">
+            <text class="btn" catchtap="cancel">取消</text>
+            <text class="btn"catchtap="ok">确定</text>
+        </view>
+        <picker-view class="addresslist" bindchange="cityChange" value="{{value}}" wx:key="">
+            <picker-view-column>
+                <view wx:for="{{provinces}}" class="picker-item" wx:key="">
+                    {{item.name}}  
+                </view>
+            </picker-view-column>
+            <picker-view-column>
+                <view wx:for="{{citys}}" class="picker-item" wx:key="">
+                    {{item.name}}  
+                </view>
+            </picker-view-column>
+            <picker-view-column>
+                <view wx:for="{{areas}}" class="picker-item" wx:key="">
+                    {{item.name}}
+                </view>
+            </picker-view-column>
+        </picker-view>
+    </view>
+</view>
